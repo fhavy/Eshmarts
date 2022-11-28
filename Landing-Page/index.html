@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eshmart</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cuprum:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - preload images
+  --></head>
+
+  <body>
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <img
+          src="./assets/images/Eshone.png"
+          width="185"
+          height="31"
+          alt="Eshmart home"
+        />
+
+        <nav class="navbar" data-navbar>
+          <div class="wrapper">
+            <a href="#" class="logo">Eshmart</a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li class="dropdown">
+              <a href="#home" class="navbar-link" data-nav-link>Home</a>
+              <div class="dropdown-content">
+                <a href="#about" class="navbar-link" data-nav-link>About</a>
+                <a href="#services" class="navbar-link" data-nav-link>
+                  Our Stores
+                </a>
+                <a href="#features" class="navbar-link" data-nav-link>
+                  Services
+                </a>
+              </div>
+            </li>
+
+            <li class="dropdown">
+              <a
+                href="/Agro_Template/Eshmart-Agro/index.html"
+                target="_blank"
+                class="navbar-link"
+                data-nav-link
+              >
+                Agro-Eshmart
+              </a>
+              <div class="dropdown-content">
+                <a
+                  href="/Agro_Template/Eshmart-Agro/product.html"
+                  target="_blank"
+                  class="navbar-link"
+                >
+                  Products
+                </a>
+                <a
+                  href="/Agro_Template/Eshmart-Agro/about.html"
+                  target="_blank"
+                  class="navbar-link"
+                >
+                  About us
+                </a>
+                <a
+                  href="/Agro_Template/Eshmart-Agro/contact.html"
+                  target="_blank"
+                  class="navbar-link"
+                >
+                  Contact us
+                </a>
+                <a
+                  href="/Agro_Template/Eshmart-Agro/blog.html"
+                  target="_blank"
+                  class="navbar-link"
+                >
+                  Blog
+                </a>
+              </div>
+            </li>
+
+            <li class="dropdown">
+              <a
+                href="/Eshmarts-Hair/Gabbys_Template/index.html"
+                target="_blank"
+                class="navbar-link"
+                data-nav-link
+              >
+                Eshmart-Hair
+              </a>
+              <div class="dropdown-content">
+                <a
+                  href="/Eshmarts-Hair/Gabbys_Template/index.html"
+                  target="_blank"
+                  class="navbar-link"
+                >
+                  Home
+                </a>
+                 <a
+                  href="/Eshmarts-Hair/Gabbys_Template/shop.html"
+                  target="_blank"
+                  class="navbar-link"
+                >
+                  Products
+                </a>
+                <a
+                  href="/Eshmarts-Hair/Gabbys_Template/gal.html"
+                  target="_blank"
+                  class="navbar-link"
+                  class="navbar-link"
+                >
+                  Gallery
+                </a>
+              </div>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="navbar-link" data-nav-link>Style-Me Fashion</a>
+              <div class="dropdown-content">
+                <a href="#" class="navbar-link" data-nav-link>Coming Soon</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#services" class="btn-outline">Explore our stores</a>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="section hero" id="home" aria-label="hero">
+          <div class="container">
+            <div class="hero-content">
+              <p class="hero-subtitle has-before">Welcome To Eshmarts</p>
+
+              <h1 class="h1 hero-title">The Home Of All</h1>
+
+              <p class="hero-text">
+                Eshmarts is a brand that not only specializes on one aspect of
+                shoping but various aspect, from Agro-Business down to a branch
+                of the fashion industry and many more.
+              </p>
+
+              <div class="btn-group">
+                <a href="#services" class="btn btn-primary">Discover More</a>
+
+                <button class="flex-btn">
+                  <div class="btn-icon">
+                    <ion-icon name="play" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">Our Vision</span>
+                </button>
+              </div>
+            </div>
+
+            <figure
+              class="hero-banner has-before img-holder"
+              style="--width: 650; --height: 650;"
+            >
+              <img
+                src="./assets/images/agro-banner.jpg"
+                width="650"
+                height="650"
+                alt="hero banner"
+                class="img-cover"
+              />
+            </figure>
+          </div>
+        </section>
+
+        <!-- 
+        - #ABOUT
+      -->
+
+        <section class="section about" id="about" aria-label="about">
+          <div class="container">
+            <figure class="about-banner">
+              <img
+                src="./assets/images/eduardo-soares-QsYXYSwV3NU-unsplash.jpg"
+                width="802"
+                height="654"
+                loading="lazy"
+                alt="about banner"
+                class="w-100"
+              />
+            </figure>
+
+            <div class="about-content">
+              <h2 class="h2-sm section-title">The Vison Behind Eshmarts</h2>
+
+              <p class="section-text">
+                Lorem Ipsum is simply dumm of free available in market the way
+                printing and typesetting industry has been the industrys
+                standard dummy text ever.
+              </p>
+
+              <ul class="about-list">
+                <li class="has-before">
+                  Price of additional materials or parts (if needed)
+                </li>
+
+                <li class="has-before">
+                  Transportation cost for carrying new materials/parts
+                </li>
+
+                <li class="has-before">
+                  You will get 100% money back offer.
+                </li>
+              </ul>
+
+              <div class="btn-group">
+                <a href="#features" class="btn btn-primary">Our Services</a>
+
+                <button class="flex-btn">
+                  <div class="btn-icon">
+                    <ion-icon
+                      name="medal-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </div>
+
+                  <span class="span">10+ Years Experience</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #SERVICE
+      -->
+
+        <section class="section service" id="services" aria-label="service">
+          <div class="container">
+            <p class="section-subtitle text-center">-Eshmart-Stores-</p>
+
+            <h2 class="h2 section-title text-center">Welcome To Our Stores</h2>
+
+            <p class="section-text text-center">
+              Get the most uniqueness from our various stores.
+            </p>
+
+            <ul class="grid-list">
+              <li>
+                <div class="service-card has-after">
+                  <figure class="card-icon">
+                    <img
+                      src="./assets/images/Updated-Eshmart-hair.png"
+                      width="140"
+                      height="140"
+                      loading="lazy"
+                      alt=""
+                      class="img"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Eshmart-Hair</h3>
+
+                    <p class="card-text">
+                      The Unique Brand that Speaks Hair.
+                    </p>
+
+                    <a
+                      href="/Eshmarts-Hair/Gabbys_Template/index.html"
+                      target="_blank"
+                      class="btn-link"
+                    >
+                      <span class="span">Visit Store</span>
+
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card has-after">
+                  <figure class="card-icon">
+                    <img
+                      src="./assets/images/Updated-Agro.png"
+                      width="140"
+                      height="140"
+                      loading="lazy"
+                      alt=""
+                      class="img"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Agro-Eshmarts</h3>
+                    <p class="card-text">
+                      The Unique Brand That Speaks Agriculture.
+                    </p>
+
+                    <a
+                      href="/Agro_Template/Eshmart-Agro/index.html"
+                      target="_blank"
+                      class="btn-link"
+                    >
+                      <span class="span">Visit Store</span>
+
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="service-card has-after">
+                  <figure class="card-icon">
+                    <img
+                      src="./assets/images/Screenshot 2022-10-21 000658.png"
+                      width="140"
+                      height="140"
+                      loading="lazy"
+                      alt=""
+                      class="img"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Style-Me-Fashion</h3>
+
+                    <p class="card-text">
+                      The Unique Brand that Speaks Fashion.
+                    </p>
+
+                    <a
+                      href="#"
+                      target="_blank"
+                      class="btn-link"
+                    >
+                      <span class="span">Coming Soon</span>
+
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </li>
+
+              
+            </ul>
+
+           
+          </div>
+        </section>
+
+        <!-- 
+        - #FEATURES
+      -->
+
+        <section class="section features" id="features" aria-label="features">
+          <div class="container">
+            <p class="section-subtitle text-center">-Why Choose Us-</p>
+
+            <h2 class="h2 section-title text-center">Reasons to Choose Us</h2>
+
+            <p class="section-text text-center">
+              Get the most of reduction in your team’s operating costs for the
+              whole product which creates amazing UI/UX experiences.
+            </p>
+
+            <ul class="grid-list">
+              <li>
+                <div class="features-card">
+                  <data class="card-number" value="01">01</data>
+
+                  <h3 class="h3 card-title">Fast Delivery</h3>
+
+                  <p class="card-text">
+                    We deliver on time.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="features-card">
+                  <data class="card-number" value="02">02</data>
+
+                  <h3 class="h3 card-title">Customer Satisfactory</h3>
+
+                  <p class="card-text">
+                    We Pioritize on making our customers satisfied.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="features-card">
+                  <data class="card-number" value="03">03</data>
+
+                  <h3 class="h3 card-title">Durable And Long Lasting</h3>
+
+                  <p class="card-text">
+                    We Offer Durable and long Lasting Products.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="features-card">
+                  <data class="card-number" value="04">04</data>
+
+                  <h3 class="h3 card-title">Quality Products</h3>
+
+                  <p class="card-text">
+                    Our Products speaks Quality.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="features-card">
+                  <data class="card-number" value="05">05</data>
+
+                  <h3 class="h3 card-title">100% Uniqueness</h3>
+
+                  <p class="card-text">
+                    Our Distingusished Brand Products Speaks Uniqueness.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="features-card">
+                  <data class="card-number" value="06">06</data>
+
+                  <h3 class="h3 card-title">Very Reasonable Price</h3>
+
+                  <p class="card-text">
+                    Our Producs are reasonable and affordable.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #FAQ
+      -->
+
+        <section class="section faq" aria-label="frequently asked questions">
+          <div class="container">
+            <div class="title-wrapper">
+              <h2 class="h2 section-title">
+                Discover Frequently Asked Questions?
+              </h2>
+              <!-- 
+            <a href="#" class="btn btn-primary">Work Together</a> -->
+            </div>
+
+            <ul class="grid-list">
+              <li>
+                <div class="faq-card">
+                  <button class="card-action" data-accordion-action>
+                    <h3 class="h3 card-title">
+                      01. DOES ESHMART EXPORT GLOBALLY 
+                    </h3>
+                    <div class="action-icon">
+                      <ion-icon
+                        name="add-outline"
+                        aria-hidden="true"
+                        class="open"
+                      ></ion-icon>
+                      <ion-icon
+                        name="remove-outline"
+                        aria-hidden="true"
+                        class="close"
+                      ></ion-icon>
+                    </div>
+                  </button>
+
+                  <div class="card-content">
+                    <p>
+                  Yes Eshmart Agro exports globally.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="faq-card">
+                  <button class="card-action" data-accordion-action>
+                    <h3 class="h3 card-title">
+                     IS ESHMART A REGISTERED AND RECOGNIZED UNDER LAW?
+                    </h3>
+
+                    <div class="action-icon">
+                      <ion-icon
+                        name="add-outline"
+                        aria-hidden="true"
+                        class="open"
+                      ></ion-icon>
+                      <ion-icon
+                        name="remove-outline"
+                        aria-hidden="true"
+                        class="close"
+                      ></ion-icon>
+                    </div>
+                  </button>
+
+                  <div class="card-content">
+                    <p>
+                     We're  legally registered private business company with Corporate Affairs Commission in Nigeria. AS ESHMART ONLINE SHOPPING STORE LTD. (RC:1453587)
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="faq-card">
+                  <button class="card-action" data-accordion-action>
+                    <h3 class="h3 card-title">
+                      03.WHAT ARE THE MAIN SPECIALIZATION OF ESHMART AGRO?
+                    </h3>
+
+                    <div class="action-icon">
+                      <ion-icon
+                        name="add-outline"
+                        aria-hidden="true"
+                        class="open"
+                      ></ion-icon>
+                      <ion-icon
+                        name="remove-outline"
+                        aria-hidden="true"
+                        class="close"
+                      ></ion-icon>
+                    </div>
+                  </button>
+
+                  <div class="card-content">
+                    <p>
+                      Eshmart Agro own vast land for agricultural purpose and partner with other stakeholders in the value chain of fresh farm organic and process products.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="faq-card">
+                  <button class="card-action" data-accordion-action>
+                    <h3 class="h3 card-title">
+                      04. WHERE'S ESHMART OFFICE LOCATED AND CONTACT DETAILS?
+                    </h3>
+
+                    <div class="action-icon">
+                      <ion-icon
+                        name="add-outline"
+                        aria-hidden="true"
+                        class="open"
+                      ></ion-icon>
+                      <ion-icon
+                        name="remove-outline"
+                        aria-hidden="true"
+                        class="close"
+                      ></ion-icon>
+                    </div>
+                  </button>
+
+                  <div class="card-content">
+                    <p>
+                      Office address: 3 Okunmade Street, Mokola Ibadan. Oyo State. Nigeria, West Africa. Mobile: +234 7068931041, WhatsApp: +234 7068931041, 
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="faq-card">
+                  <button class="card-action" data-accordion-action>
+                    <h3 class="h3 card-title">
+                      05. WHERE IS THE LOCATION FOR ESHMARTS HAIR
+                    </h3>
+
+                    <div class="action-icon">
+                      <ion-icon
+                        name="add-outline"
+                        aria-hidden="true"
+                        class="open"
+                      ></ion-icon>
+                      <ion-icon
+                        name="remove-outline"
+                        aria-hidden="true"
+                        class="close"
+                      ></ion-icon>
+                    </div>
+                  </button>
+
+                  <div class="card-content">
+                    <p>
+                      Plot 203A Tunde Ogini Shopping plaza, Magazine Rd, opposite University Press, Jericho, Ibadan
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="footer-top section">
+        <div class="container">
+          <div class="footer-brand">
+            <img
+              src="./assets/images/Eshone.png"
+              width="185"
+              height="31"
+              alt="Eshmart home"
+            />
+
+            <p class="footer-text">
+              Welcome to Eshmarts, The Home of All.
+            </p>
+
+            <form action="" class="newsletter-form">
+              <input
+                type="email"
+                name="email_address"
+                placeholder="Enter your email"
+                required
+                class="email-field"
+              />
+
+              <button type="submit" class="form-btn">
+                <ion-icon name="paper-plane" aria-hidden="true"></ion-icon>
+              </button>
+            </form>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Our Services</p>
+            </li>
+
+            <li>
+              <a
+                href="/Agro_Template/Eshmart-Agro/index.html"
+                target="_blank"
+                class="footer-link"
+              >
+                Agro-Eshmart
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="/Eshmarts-Hair/Gabbys_Template/index.html"
+                target="_blank"
+                class="footer-link"
+              >
+                Eshmarts-Hair
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Style-Me-Fashion</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Eshmarts</p>
+            </li>
+
+            <li>
+              <a href="#home" class="footer-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#about" class="footer-link">About Eshmarts</a>
+            </li>
+
+            <li>
+              <a href="#features" class="footer-link">Our Services</a>
+            </li>
+
+            <li>
+              <a href="#services" class="footer-link">Our Stores</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Contact Us</p>
+            </li>
+
+            <li class="footer-item">
+              <ion-icon name="location" aria-hidden="true"></ion-icon>
+
+              <address class="contact-link address">
+                No-3 Okunmade street mokola, Ibadan-Oyo state , Nigeria
+              </address>
+            </li>
+
+            <li class="footer-item">
+              <ion-icon name="call" aria-hidden="true"></ion-icon>
+
+              <a href="tel:+234-706-8931-041" class="contact-link">
+                +234-706-8931-041
+              </a>
+            </li>
+
+            <li class="footer-item">
+              <ion-icon name="mail" aria-hidden="true"></ion-icon>
+
+              <a href="mailto:info@Eshmart.com" class="contact-link">
+                info@Eshmart.com
+              </a>
+            </li>
+
+            <li class="footer-item">
+              <ul class="social-list">
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-pinterest"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="copyright">
+            &copy; 2022 Eshmart | All Rights Reserved by
+            <a href="#" class="copyright-link">Gabbys</a>
+          </p>
+
+          <ul class="footer-bottom-list">
+            <li>
+              <a href="#" class="footer-bottom-link">Privacy Policy</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-bottom-link">Terms of Use</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
